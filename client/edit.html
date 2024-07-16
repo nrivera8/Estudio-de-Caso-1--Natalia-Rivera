@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar/Crear Nota</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="formTitle">Nueva Nota</h1>
+    <form id="noteForm">
+        <input type="text" id="title" placeholder="Título" required>
+        <textarea id="content" placeholder="Contenido" required></textarea>
+        <input type="text" id="tags" placeholder="Etiquetas (separadas por comas)">
+        <button type="submit">Guardar</button>
+        <button type="button" onclick="window.location.href='index.html'">Cancelar</button>
+        <button type="button" id="deleteBtn" style="display:none;" onclick="deleteNote()">Eliminar</button>
+    </form>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
